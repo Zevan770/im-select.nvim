@@ -185,6 +185,9 @@ local function restore_previous_im()
     end
 end
 
+M.restore_default_im = restore_default_im
+M.restore_previous_im = restore_previous_im
+
 M.setup = function(opts)
     if not is_supported() then
         return
